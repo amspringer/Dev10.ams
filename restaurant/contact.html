@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+	Name: 
+	Date created: 
+	Most recent revision: 
+-->
+<html lang="en">
+	<head>
+		<title>Contact Us</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Say CHEESE</h1>
+		</header>
+		
+		<nav> <!-- The nav element will include navigation buttons or links -->
+			<hr />
+			<p><a href="home.html":>Home</a></p>
+			<p><a href="menu.html":>Menu</a></p>
+			<p><a href="contact.html":>Contact Us</a></p>
+			<hr />
+		</nav>
+		
+		<form action="submit.html" method="POST">
+			<p><label for="Name">Name:<label>
+			<input type="text" id="Name" name="Name"></p>
+			<p><label for="Email">Email:<label>
+			<input type="text" id="Email" name="Email"></p>
+			<p><label for="phone">Phone:<label>
+			<input type="text" id="phone" name="phone"></p>
+		
+		<p><label for="reason">Reason for Inquiry:</label><br />
+			<select id="reason" name="reason">
+				<option value="default" selected>Catering</option>
+				<option value="party">Private Party</option>
+				<option value="feedback">Feedback</option>	
+				<option value="other">Other</option>
+			</select></p>
+			
+		<p><label for="info">Additional Information:</label>
+			<textarea id="info"></textarea></p>
+			
+		<p><label for="question">Have you been to the restaurant?</label>
+			<input type="radio" name="question" value="NO" checked/>
+			<label for="choice1">No</label>
+			<input type="radio"  name="question" value="yes">
+			<label for="choice2">Yes</label></p>
+		
+		<p><label for="contact">Best days to contact you:</label>
+			<input type="checkbox" id"Mon" name"contact" value="Mon">
+			<label for"Mon">M</label>
+			<input type="checkbox" id"Tues" name"contact" value="Tues">
+			<label for"Tues">T</label>
+			<input type="checkbox" id"Wed" name"contact" value="Wed">
+			<label for"Wed">W</label>
+			<input type="checkbox" id"Thu" name"contact" value="Thu">
+			<label for"Thu">Th</label>
+			<input type="checkbox" id"Fri" name"contact" value="Fri">
+			<label for"Fri">F</label></p>
+		
+		<input type="submit" name="submit" value="Send Request">
+		</form>
+		<hr />
+		<footer>
+			<p>12 Brie Blvd, Monterey, CA 93942</p>
+			<p>831-555-6212</p>
+		</footer>
+	<body>
+</html>
