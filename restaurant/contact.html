@@ -1,25 +1,88 @@
 <!DOCTYPE html>
 <!--
-	Name: 
-	Date created: 
-	Most recent revision: 
+	Name: Andrea Springer
+	Date created: 2018/09/12
+	Most recent revision: 2018/09/15
 -->
 <html lang="en">
 	<head>
+
 		<title>Contact Us</title>
+
+	<link href="style/restaurantStyles.css" rel="stylesheet" type="text/css" />
+			<style>
+		/* form styling */
+		
+		label {
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+		
+		text, fieldset{
+			font-size: 1.2em;
+		}
+		option, fieldset{
+			font-size: 1.2em;
+		}
+
+		input[type=text] {
+			border: 1px solid #0d1f2d;
+			width: 50%;
+			padding: 8px 8px;
+			margin: 12px 5px;
+			box-sizing: border-box;
+			font-size: 1.1em;
+		}
+
+		fieldset {
+			width: 50%;
+			padding: 12px 20px;
+			margin: 12px 0;
+			box-sizing:	border-box;
+		}
+
+		select, textarea {
+			margin: 12px 0;
+			font-size: 1em;
+		}
+
+		input[type=submit] {
+			font-size: 1.2em;
+			background-color: #3fa63f;
+			color: #fef9ff;
+			padding: 4px 8px;
+		}
+
+		input[type=submit]:hover {
+			background-color: #f2eded;
+			color: #546a7b;
+		}
+
+		textarea {
+			width: 100%;
+			height: 200px;
+			padding: 12px 20px;
+			margin: 12px 0;
+			box-sizing: border-box;
+			border: 1px solid #0d1f2d;
+			border-radius: 3px;
+			background-color: #fef9ff;
+			resize: none;
+		}
+		</style>
 	</head>
 	
 	<body>
+
 		<header>
-			<h1>Say CHEESE</h1>
+			<h1>Say CHEESE!</h1>
 		</header>
 		
-		<nav> <!-- The nav element will include navigation buttons or links -->
-			<hr />
-			<p><a href="home.html":>Home</a></p>
-			<p><a href="menu.html":>Menu</a></p>
-			<p><a href="contact.html":>Contact Us</a></p>
-			<hr />
+		<nav>
+			<p><a class="btn" href="home.html":>Home</a></p>
+			<p><a class="btn" href="menu.html":>Menu</a></p>
+			<p><a class="btn" href="contact.html":>Contact Us</a></p>
+			<div class="clear-float"></div>
 		</nav>
 		
 		<form action="submit.html" method="POST">
@@ -30,7 +93,7 @@
 			<p><label for="phone">Phone:<label>
 			<input type="text" id="phone" name="phone"></p>
 		
-		<p><label for="reason">Reason for Inquiry:</label><br />
+		<p><label for="reason">Reason for Inquiry:</label>
 			<select id="reason" name="reason">
 				<option value="default" selected>Catering</option>
 				<option value="party">Private Party</option>
@@ -43,28 +106,29 @@
 			
 		<p><label for="question">Have you been to the restaurant?</label>
 			<input type="radio" name="question" value="NO" checked/>
-			<label for="choice1">No</label>
+			<text for="choice1">No</text>
 			<input type="radio"  name="question" value="yes">
-			<label for="choice2">Yes</label></p>
+			<text for="choice2">Yes</text></p>
 		
 		<p><label for="contact">Best days to contact you:</label>
 			<input type="checkbox" id"Mon" name"contact" value="Mon">
-			<label for"Mon">M</label>
+			<text for"Mon">M</text>
 			<input type="checkbox" id"Tues" name"contact" value="Tues">
-			<label for"Tues">T</label>
+			<text for"Tues">T</text>
 			<input type="checkbox" id"Wed" name"contact" value="Wed">
-			<label for"Wed">W</label>
+			<text for"Wed">W</text>
 			<input type="checkbox" id"Thu" name"contact" value="Thu">
-			<label for"Thu">Th</label>
+			<text for"Thu">Th</text>
 			<input type="checkbox" id"Fri" name"contact" value="Fri">
-			<label for"Fri">F</label></p>
+			<text for"Fri">F</text></p>
 		
 		<input type="submit" name="submit" value="Send Request">
-		</form>
-		<hr />
+		</form><br />
+
 		<footer>
 			<p>12 Brie Blvd, Monterey, CA 93942</p>
 			<p>831-555-6212</p>
 		</footer>
+
 	<body>
 </html>

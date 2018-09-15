@@ -2,11 +2,57 @@
 <!--
 	Name: Andrea Springer
 	Date created: 2018/09/08
-	Most recent revision: 2018/09/11
+	Most recent revision: 2018/09/14
 -->
 <html lang="en">
 <head>
 	<title>Andrea's Portfolio</title>
+	<link href="styles/main.css" rel="stylesheet" type="text/css" />
+	<style>
+		caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+			color: #fef9ff;
+        }
+
+        table, th, td {
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+			padding: 5px 10px;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+        }
+
+        tr {
+            height: 30px;
+        }
+
+        th {
+            background-color: #202060; 
+            color: #fff;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #666699; 
+        }
+        
+        /* article layouts */
+        article img {
+            float:left;
+        }
+
+        .right-content {
+            float:left;
+        }
+
+        article {
+            margin-bottom: 16px;
+        }
+	</style>
 </head>
 	
 <body>
@@ -16,56 +62,62 @@
 		</header>
 	
 		<nav> <!-- The nav element will include navigation buttons or links -->
-			<hr />
 			<p><a href="projects.html":>Projects</a></p>
 			<p><a href="contact.html":>Contact Me</a></p>
 			<p><a href="testimonials.html":>Testimonials</a></p>
-			<hr />
+		<div class="clear-float"></div>
 		</nav>
 	
 		<section>
-			<article id="about.me">
+			<article id="about">
 				<h2><em>About Me</em></h2>
-				<a href="index.html"><img src="images/AndreaSpringer.jpg" alt="Portrait of Andrea Springer" /></a>
+				<img src="images/AndreaSpringer.jpg" alt="Portrait of Andrea Springer" width="250"/>
 				<p>Originally went to college for Architecture but graduated with a Bachelor’s Degree from University of Arkansas focused in Agricultural Economics with a minor in Business.<strong> Experienced Application Support Specialist</strong> with a demonstrated history of working in the Financial Industry. Skilled in communications, testing, Linux servers, analysis, and reporting.</p>
 				<p><strong>Proactive, driven and hard-working</strong>; no project is too big or too small. <strong>Faces challenges head on with a positive mindset</strong>. Looking to relocate to Charlotte, North Carolina from Northwest Arkansas.</p>
+				<div class="clear-float"></div>
 			</article>
 		
-			<article id="past.experiences">
+			<article id="experiences">
 				<h2><em>Past Experiences</em></h2>
-				<img src="images/ArvestApps.png" alt="Mobile Apps" />
-				<table>
-					<caption> Employment History </caption>
-					<tr>
-						<th>Years of Employment</th>
-						<th>Company</th>
-						<th>Title</th>
-						<th>Accomplishments</th>
-					</tr>
-					<tr>
-						<td>2018-Present</td>
-						<td>Arvest Bank</td>
-						<td>Customer Application Support Analyst</td>
-						<td>Tech Resource for new Consumer Mobile App, Mortgage App and Loan website</td>
-					</tr>
-					<tr>
-						<td>2014-2018</td>
-						<td>Arvest Bank</td>
-						<td>Digital Server System Analyst</td>
-						<td>Tech Resource for Consumer Online Banking platform migration</td>
-					</tr>
-					<tr>
-						<td>2012-2014</td>
-						<td>Arvest Bank</td>
-						<td>Teller</td>
-						<td>Two quarterly sales awards</td>
-					</tr>
-				</table>
+				<img src="images/ArvestApps.png" alt="Mobile Apps" width="250" />
+				 <div class="right-content">
+                    <table> 
+                        <caption>Employment History</caption>
+                        <thead>
+                            <tr> 
+                                <th>Years in Position</th> 
+                                <th>Title</th> 
+                                <th>Company</th>
+								<th>Accomplishments</th>								
+                            </tr> 
+                        </thead>
+                        <tbody>
+                            <tr> 
+                                <td>2018-Present</td>
+								<td rowspan="3">Arvest Bank</td>
+								<td>Customer Application Support Analyst</td>
+								<td>Tech Resource for multiple Mobile Apps</td>
+                            </tr> 
+                            <tr> 
+                                <td>2014-2018</td>
+								<td>Digital Server System Analyst</td>
+								<td>Tech Resource for Online Banking migration</td>
+                            </tr>
+                            <tr>
+                                <td>2012-2014</td>
+								<td>Teller</td>
+								<td>Two quarterly sales awards</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="clear-float"></div>
 			</article>
 		
 			<article id="hobbies">
 				<h2><em>Hobbies</em></h2>
-				<img src="images/NiagraFalls.jpg" alt="Niagra Falls" />
+				<img src="images/NiagraFalls.jpg" alt="Niagra Falls" width="250" />
+				<div class="right-content">
 				<ul>
 					<li>Places</li>
 					<ol>
@@ -97,10 +149,10 @@
 					</ul>
 				</ul>
 			</article>
+			<div class="clear-float"></div>
 		</section>
 		
 		<footer>
-			<hr />
 			<p>&copy; 2020 Andrea Springer. All rights reserved.</p>
 		</footer>
 	</main>

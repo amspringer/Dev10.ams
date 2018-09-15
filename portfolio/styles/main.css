@@ -1,0 +1,63 @@
+/*
+Creator: Andrea Springer
+Date create: 2018/09/13
+Date last modified: 2018/09/14
+*/
+body {
+	background-image: url("../images/background9.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: arial, helvetica, sans-serif;
+	color: #fef9ff;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+header, footer {
+	background-color: #202060;
+	color: #fef9ff;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+nav {
+	border-top: 3px solid #666699;
+	border-bottom: 3px solid #666699;
+	margin-top: 4px;
+}
+
+nav a {
+    background-color: #666699;
+    color: #FFFFFF;
+    padding: 8px;
+    border: thin solid #fef9ff;
+    text-decoration: none;
+    text-align: center;
+	display: block;
+	margin: 20px;
+	width: 100px;
+	float: left;
+}
+
+.clear-float {
+    clear:both;
+}
+		
+nav a:hover {
+    background-color: #57FFEA;
+    color: #fef9ff; 
+}
+
+nav a:active {
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #FFFFFF; 
+}
