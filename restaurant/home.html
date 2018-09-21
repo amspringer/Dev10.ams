@@ -2,45 +2,85 @@
 <!--
 	Name: Andrea Springer
 	Date created: 2018/09/12
-	Most recent revision: 2018/09/15
+	Most recent revision: 2018/09/21
 -->
 <html lang="en">
-<head>
-
+	<head>
+	<noscript>
+		<div class="noscriptmsg">
+			Please enable JavaScript for best experience.
+		</div>
+	</noscript>
+	<meta charset="utf-8">
+	<meta name="viewport" contect="width=device-width, initail-scale=1, shrink-to-fit=no">
 		<title>Home Page</title>
-	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="style/restaurantStyles.css" rel="stylesheet" type="text/css" />
+	
 	<style>
-	body {
-		background-color: #ffffcc;
-		color: rgb(0,0,0);
-	}
+	
+		body {
+			background-color: #ffffcc;
+			color: rgb(0,0,0);
+		}
+		
+		.col-center-block {
+			float: none;
+			display: block;
+			margin: 0 auto;
+		}
 	
 	</style>
-</head>
+	</head>
 	
-<body>
-
-	<main>
-		<header>
-			<h1>Say CHEESE!</h1>
-		</header>
+	<body>
+		<div class="container-fluid">
+		<main>
+			<header class="jumbotron">
+				<h1>Say CHEESE!</h1>
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<h2 class="font-italic">We're opening a new location!</h2>
+					</div>
+					<div class="carousel-item">
+						<h2 class="font-italic">We're rolling out our seasonal menu, with special options for this season</h2>
+					</div>
+					<div class="carousel-item">
+						<h2 class="font-italic">The Drink of the Month is SG Special Brew.</h2>
+					</div>
+				</div>
+			</div>
+			</header>
 	
-		<nav>
-			<p><a class="btn" href="home.html":>Home</a></p>
-			<p><a class="btn" href="menu.html":>Menu</a></p>
-			<p><a class="btn" href="contact.html":>Contact Us</a></p>
-			<div class="clear-float"></div>
-		</nav>
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html"><i class="fas fa-home fa-lg"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="menu.html">Menu</a></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
+				</li>
+			</ul>
+				
+			<div class="row" align="center">
+			<div class="col-md-4 col-center-block">
+				<img class="img-fluid" src="images/cheese.jpg" alt="Cheese Wheels" />
+				<p style="font-size: 1.5em">Do you LOVE cheese? We do!!<br />
+				Whether you're visiting us for Brunch, Lunch or Dinner, we are sure you'll find something you LOVE. We specialize in all your cheesy desires, with the wide variey of options. From sweet to savory, your tastebuds will explode with mouth watering goodness. We use only best ingredients, most of which are grown in or garden our locally sourced.</p>
+			</div>
+			</div>
 		
-		<img src="images/cheese.jpg" alt="Cheese Wheels" style="display:block; margin-left: auto; margin-right: auto;" />
-		<p style="text-align:center; font-size: 1.5em"><br />
-		We specialize in all your cheesy desires with the wide variey of options. From sweet to savory, your tastebuds will explode with mouth watering goodness. We use only best ingredients, most of which are grown in our garden our locally sourced.</p>
-		
-		<footer>
-			<p>12 Brie Blvd, Monterey, CA 93942</p>
-			<p>831-555-6212</p>
-		</footer>
-
-<body>
+			<footer>
+				<p>12 Brie Blvd, Monterey, CA, 93942</p>
+				<p>831-555-6212</p>
+			</footer>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
 </html>

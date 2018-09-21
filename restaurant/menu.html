@@ -2,44 +2,41 @@
 <!--
 	Name: Andrea Springer
 	Date created: 2018/09/12
-	Most recent revision: 2018/09/15
+	Most recent revision: 2018/09/21
 -->
 <html lang="en">
 	<head>
-
+	<noscript>
+		<div class="noscriptmsg">
+			Please enable JavaScript for best experience.
+		</div>
+	</noscript>
+	<meta charset="utf-8">
+	<meta name="viewport" contect="width=device-width, initail-scale=1, shrink-to-fit=no">
 		<title>Menu</title>
-	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="style/restaurantStyles.css" rel="stylesheet" type="text/css" />
-	<style>
-	text {
-			font-size: 1.4em;
-			font-weight: bold;
-	}
-		
-	body {
-		background-color: #ffffb3;
-		color: rgb(0,0,0);
-	}
 	
-	 /* article layouts */
-        article img {
-            float:left;
-        }
-
-        .right-content {
-            float:left;
-        }
-
-        article {
-            margin-bottom: 16px;
-        }
+	<style>
+	
+		h3 {
+			font-size: 1.2em;
+			font-weight: bold;
+		}
 		
-		  table, th, td {
+		body {
+			background-color: #ffffb3;
+			color: rgb(0,0,0);
+		}
+
+		table, th, td {
 			padding: 5px 10px;
         }
 
         table {
-            width: 50%;
+            width: 40%;
+			margin-bottom: 10px;
         }
 
         tr {
@@ -52,55 +49,79 @@
 			font-size: 1.4em;
         }
 
-        tbody tr:nth-child(odd) {
+        tbody tr:nth-child(even) {
             background-color: #fff; 
         }
+		
 	</style>
 	</head>
+	<body>
+		<div class="container-fluid">
+		<main>
+			<header class="jumbotron">
+				<h1>Say CHEESE!</h1>
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<h2 class="font-italic">We're opening a new location!</h2>
+					</div>
+					<div class="carousel-item">
+						<h2 class="font-italic">We're rolling out our seasonal menu, with special options for this season</h2>
+					</div>
+					<div class="carousel-item">
+						<h2 class="font-italic">The Drink of the Month is SG Special Brew.</h2>
+					</div>
+				</div>
+			</div>
+			</header>
 	
-		<header>
-			<h1>Say CHEESE!</h1>
-		</header>
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html"><i class="fas fa-home fa-lg"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="menu.html">Menu</a></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
+				</li>
+			</ul><body>
+		<div class="container-fluid">
 		
-		<nav>
-			<p><a class="btn" href="home.html":>Home</a></p>
-			<p><a class="btn" href="menu.html":>Menu</a></p>
-			<p><a class="btn" href="contact.html":>Contact Us</a></p>
-			<div class="clear-float"></div>
-		</nav>
+		<div class="row" align="center">
+			<div class="col-md-4">
+			<h3>Gourmet Mac and Cheese</h3>
+			<p>Elbow noodles tossed in creamy Gruyere, White Cheddar, and Jack cheese sauce. Seasoned with garlic, fresh ground pepper, and cayenne pepper. Topped with homemade bread crumbs then baked and garnished with parsley.<br />
+			$10.95</p>
+			</div>
+			<div class="col-md-4">
+			<h3>Cheesy Chicken Quesadilla</h3>
+			<p>Oaxaca, Mozzarella and Queso Fresco. Shredded chicken mixed with caramelized onions and sautéed bell peppers. Topped with Crema and servered with pico de gallo and guacamole.<br />
+			$12.95</p>
+			</div>
+			<div class="col-md-4">
+			<h3>Cheese Stuffed Burger</h3><br />
+			<p>6oz of Wagyu ground beef stuffed with 4oz of gorgonzola and blue cheese. Inside a toasted potato bun with lettuce, tomatoes and house aioli. Side of baked sweet potato fies season with sea salt.<br />
+			$15.95</p>
+			</div>
+			<div class="col-md-4">
+			<h3>Grilled Pork and Cheese</h3>
+			<p>Prosciutto, Cotto Salami, Smoked Ham, Provolone, and Havarti. Grilled on sourdough bread with herb mayo. Side of homemade salt and vinegar chips<br />
+			$14.95</p>
+			</div>
+			<div class="col-md-4">
+			<h3>Ricotta Mezzelune</h3>
+			<p>Pasta stuffed with homemade ricotta and spinach. Seasoned with garlic, fresh basil and lemon zest. Paired with a tomato-pancetta sauce.<br />
+			$11.95</p>
+			</div>
+			<div class="col-md-4">
+			<h3>Cheesecake</h3>
+			<p>Rich, decadent New York style cheesecake. Served with your choice of strawberry, blueberry or raspberry compote. Paired with honey whipped cream.<br />
+			$10.95</p>
+			</div>
+		</div>
 		
-		<p><text>Gourmet Mac and Cheese</text><br />
-		Elbow noodles tossed in creamy Gruyere, White Cheddar, and Jack cheese sauce.<br />
-		Seasoned with garlic, fresh ground pepper, and cayenne pepper.<br />
-		Topped with homemade bread crumbs then baked and garnished with parsley.<brtext />
-		$10.95</p>
-		<p><text>Cheesy Chicken Quesadilla</text><br />
-		Oaxaca, Mozzarella and Queso Fresco.<br />
-		Shredded chicken mixed with caramelized onions and sautéed bell peppers.<br />
-		Topped with Crema and servered with pico de gallo and guacamole.<br />
-		$12.95</p>
-		<p><text>Cheese Stuffed Burger</text><br />
-		6oz of Wagyu ground beef stuffed with 4oz of gorgonzola and blue cheese.<br />
-		Inside a toasted potato bun with lettuce, tomatoes and house aioli.<br />
-		Side of baked sweet potato fies season with sea salt.<br />
-		$15.95</p>
-		<p><text>Grilled Pork and Cheese</text><br />
-		Prosciutto, Cotto Salami, Smoked Ham, Provolone, and Havarti.<br />
-		Grilled on sourdough bread with herb mayo.<br />
-		Side of homemade salt and vinegar chips<br />
-		$14.95</p>
-		<p><text>Ricotta Mezzelune</text><br />
-		Pasta stuffed with homemade ricotta and spinach.<br />
-		Seasoned with garlic, fresh basil and lemon zest.<br />
-		Paired with a tomato-pancetta sauce.<br />
-		$11.95</p>
-		<p><text>Cheesecake</text><br />
-		Rich, decadent New York style cheesecake.<br />
-		Served with your choice of strawberry, blueberry or raspberry compote.<br />
-		Paired with honey whipped cream.<br />
-		$10.95</p>
-		
-		<table> 
+		<table align="center"> 
            <thead>
 				<tr>
 					<th colspan="2"> Beverages</th> 						
@@ -127,9 +148,12 @@
 		</table>
 
 		<footer>
-			<p>12 Brie Blvd, Monterey, CA 93942</p>
+			<p>12 Brie Blvd, Monterey, CA, 93942</p>
 			<p>831-555-6212</p>
 		</footer>
-
-	<body>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
 </html>

@@ -1,19 +1,23 @@
-header, footer {
+footer {
 	background-color: #001a00;
 	color: #fff;
-	height: 100px;
+	height: auto;
 	text-align: center;
 	padding: 30px 10px 20px 10px;
 }
 
-header {
+.jumbotron {
 	font-family: 'Segoe Print', cursive;
+	background-color: #001a00;
+	color: #fff;
+	height: auto;
+	text-align: center;
 }
 
-nav a {
+.nav-pills a {
 	background-color: #3fa63f;
 	color: #fff;
-	border: thin solid #000000;
+	border: thin solid #fff;
 	padding: 8px;
 	text-decoration: none;
 	text-align: center;
@@ -22,23 +26,13 @@ nav a {
 	float: left;
 }
 			
-nav a:hover {
+.nav-pills a:hover {
 	font-weight: bold;
 }
 
-.clear-float {
-    clear:both;
-}
-
-nav a:visited {
+.nav-pills a:visited {
 	background-color: #006600;
     color: #ffff99; 
 	border: thin solid #ffff99;
 }
 
-nav {
-	border-top: 3px solid #004d00;
-	border-bottom: 3px solid #004d00;
-	margin-top: 4px;
-	margin-bottom: 4px
-}
