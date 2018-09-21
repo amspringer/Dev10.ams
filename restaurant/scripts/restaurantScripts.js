@@ -12,7 +12,7 @@ function validateForm(){
 	
 	//email address
 	if (email == "") {
-	alert("Please enter your email address.");
+	alert("Please enter a valid email address.");
 	return false;
 	}
 	
@@ -24,7 +24,7 @@ function validateForm(){
 		
 	//on sumitt
 	else {
-	alert("Thank you! Someone will be in contact.")
+	alert("Thank you " + name +"! Someone will contact you soon.")
 	}
 	
 }
